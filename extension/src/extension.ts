@@ -241,6 +241,7 @@ async function runTest(javaHome: string, tests: TestSuite[] | TestSuite, storage
                     type: 'java',
                     request: 'attach',
                     hostName: 'localhost',
+                    projectName: rootDir.name,
                     port,
                 });
             }, 500);
